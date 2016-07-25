@@ -15,6 +15,10 @@ a remote machine. No software installation is required on the remote machines, p
 #### Usage
     $ ./gradlew clean build
     $ ansible-playbook -i environments/dev/dev.ini playbooks/deploy-app.yaml
+    
+#### More Examples
+The MCJUG presentation slides, which provide more Playbook and Inventory file
+examples, can be found [here](https://github.com/bmrobin/ansible/blob/master/ansible.pptx)
 
 #### Assumptions
 Currently the Ansible inventory file in ```environments/dev/dev.ini``` references a CentOS-based host named 10.0.0.114. 

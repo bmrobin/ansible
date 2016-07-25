@@ -1,0 +1,5 @@
+# applied to all members of the app-server group in the Dev environment
+---
+java_version: 'java-1.8.0-openjdk.x86_64'
+app_path: '../build/libs/'
+app_name: 'demo-app-1.0.war'

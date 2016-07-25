@@ -1,0 +1,10 @@
+---
+- hosts: app-server
+  tasks:
+    - debug: msg="deploying app to server"
+
+    - name: ensure {{ java_version }} is installed
+      yum: name={{ java_version }} state=installed
+
+    - name: deploy app {{ app_name }} to server
+      copy: src="{{ app_path }}{{ app_name }}" dest=/tmp force=yes
